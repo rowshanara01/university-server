@@ -1,0 +1,84 @@
+**modular pattern
+interface => schema => model => db query
+
+** for interface => create => student.interface.ts
+** for schema => create => student.model.ts
+** for model => student.model.ts e schema create korar pore model create korbo. same file e schema + model.
+***********************************************
+**app.ts e main route. like '/api/v1/students'
+route => Controller => Service
+interface and model er pore route => Controller => Service er kaj. validation etc etc
+** client hits request to route. **
+** route call controller. **
+** controller call service function. ** 
+** service handle business logic. ** 
+***********
+* for controller (student.controller.ts) => handle request and response. also response message
+* for route (student.route.ts) => kon query kon location e hobe seta. mane get, post kon route e konta hobe seita dekhe.
+* for service (student.service.ts) => handle all queries. service theke database zabe. service e database query calay.
+**********************************************
+service model theke query calay database theke data ene controller k dibe. controller response hisebe client k data diye dibe.
+client theke route e hit hobe, route create data function k call dibe. then service function k call dibe. service db te zeye data k create korbe.
+************************************************
+** route => create student.route.ts ** app.ts e bolte hobe kon route e gele student route e cole ashbe.
+app.ts e api pattern ta thik kore dibo. ** like => api/v1/etc/etc
+*****************************************************************************************
+*****************************************************************************************
+pattern ready.*** route => controller => service
+prottekta route er por controller and service update kora lage.
+*****************************************************************************************
+** data validation with zod                                                            **
+*****************************************************************************************
+model copy kore chat gpt diye zod schema create korbo
+
+*****************************************************************************************
+//** custom instance method diye dekhbo kono user database e ache kina
+// step:  1. create type/interface. (StudentMethods)
+// step 2. create model (StudentModel)
+// step 3. model e update (student.model e kaj)
+// step 4. implimentation (student.model e kaj) and student.service.ts
+
+*****************************************************************************************
+** password validate
+interphase (student) and model (student schema) e password field anbo. 
+** bcrypt install
+student.model => model file e kaj.
+*****************************************************************************************
+** delete
+interface, model e isDeleted namer flag create korbo.
+then route, service, controller, validate zod(or joi zetai kori)
+*****************************************************************************************
+***************** custom instance method ******************
+//** custom instance method diye dekhbo kono user database e ache kina
+// step:  1. create type/interface. (StudentMethods) (student.interface e kaj)
+// step 2. create model (StudentModel) (student.interface e kaj)
+// then
+// step 3. model e update (student.model e kaj)
+// step 4. implimentation (student.model e kaj) & (student.service e kaj )
+// empty obj rakha zabe na. ejnno Record<string, never> use korte hoy
+
+
+// **********password bcrypt****************
+// model er baire kaj nai
+// interface r model e password field add kora lagbe
+// *** pre hook middleware hook use kore password k database e save korar age hashing korlam
+// password hashing
+// pre save middleware/hook: will work on create() save()
+// hashing password and save to db.
+// hasssing bolte real password ta save kore na db te.
+// BCRYPT_SALT_ROUNDS .env file e ekta score dite hobe.
+// erpor index.ts theke export korte hobe.
+
+
+***Create User As Student***
+interface, model e update korte hobe student er
+
+user.service, e giye
+// create a student
+user.model.ts e,
+password bycrypt er kaj
+
+*****jwt token*****
+node
+require('crypto').randomBytes(32).toString('hex')
+result => 9bb31e4b77c24bf0a3ba15b3cb430b6e31028835a1ab7281cf10cabadfe25c8f
