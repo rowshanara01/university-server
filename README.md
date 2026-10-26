@@ -16,7 +16,7 @@ A modern, responsive frontend for a **multivendor e-commerce platform**, where m
 
 ## Tech Stack##
 
-- **Language:** TypeScript
+- **Language:** TypeScript##
 - **Framework:** React / Next.js
 - **Styling:** CSS / Tailwind CSS
 - **API:** REST API (backend connects separately)
