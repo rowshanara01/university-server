@@ -23,7 +23,7 @@ A modern, responsive frontend for a **multivendor e-commerce platform**, where m
 
 > Update the framework and styling lines if your project uses something different.
 
-## Getting Started
+## Getting Started ##
 
 ### Prerequisites
 
