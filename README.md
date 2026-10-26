@@ -2,7 +2,7 @@
 
 A modern, responsive frontend for a **multivendor e-commerce platform**, where multiple vendors can list and sell their products in a single marketplace. Built with **TypeScript** for type safety and maintainability.
 
-## Features##
+## Features ##
 
 - Browse products by category, vendor and search
 - Product details page with images, price and description
@@ -30,13 +30,13 @@ A modern, responsive frontend for a **multivendor e-commerce platform**, where m
 - [Node.js](https://nodejs.org/) (v18 or later)
 - npm or yarn
 
-### Installation
+### Installation ##
 
 ```bash
 # Clone the repository
 git clone https://github.com/rowshanara01/vendor-ecom-frontend-.git
 
-# Go to the project folder
+## Go to the project folder##
 cd vendor-ecom-frontend-
 
 # Install dependencies
