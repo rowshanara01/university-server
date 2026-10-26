@@ -33,7 +33,7 @@ A modern, responsive frontend for a **multivendor e-commerce platform**, where m
 ### Installation ##
 
 ```bash
-# Clone the repository
+### Clone the repository
 git clone https://github.com/rowshanara01/vendor-ecom-frontend-.git
 
 ## Go to the project folder##
