@@ -14,7 +14,7 @@ A modern, responsive frontend for a **multivendor e-commerce platform**, where m
 
 > Adjust this list to match what is actually implemented in your project.
 
-## Tech Stack
+## Tech Stack##
 
 - **Language:** TypeScript
 - **Framework:** React / Next.js
