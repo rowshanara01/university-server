@@ -1,4 +1,4 @@
-### Multivendor E-Commerce Frontend #
+### Multivendor E-Commerce Frontend ##
 
 A modern, responsive frontend for a **multivendor e-commerce platform**, where multiple vendors can list and sell their products in a single marketplace. Built with **TypeScript** for type safety and maintainability.
 
